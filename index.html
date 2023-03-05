@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logoipsum - dolor sit amet</title>
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Tomasz Siwiński">
+    <meta name="description"
+        content="Wyjątkowe fotografie podróżnicze z całego świata. Poznaj najpiękniejsze krajobrazy, miejsca i historie razem z fotografem xyz ">
+    <meta name="keywords" content="fotograf, fotografia, zdjęcie, logoipsum, podróż, krajobraz, blog podróżniczy">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/70cc2a3010.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="nav__logo">
+                <img class="logo__icon" src="./images/logoipsum-logo.svg" alt="logoipsum-logo">
+                <p class="logo__text">Logoipsum <span class="logo__text--red">dolor sit amet</span></p>
+            </div>
+            <div class="nav__menu">
+                <button class="menu__burger">
+                    <i class="fa-solid fa-bars menu__burger-i"></i>
+                    <i class="fas fa-times menu__burger-i menu__burger--hide"></i>
+                </button>
+                <ul class="menu menu--hide">
+                    <a class="menu__link" href="#start">
+                        <li class="menu__item">Start</li>
+                    </a>
+                    <a class="menu__link" href="#about-me">
+                        <li class="menu__item">O mnie</li>
+                    </a>
+                    <a class="menu__link" href="#galery">
+                        <li class="menu__item">Galeria</li>
+                    </a>
+                    <a class="menu__link contact--show" href="#contact">
+                        <li class="menu__item">Kontakt</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="nav__social-media">
+                <a class="social-media__link" href="#"><i class="fa-brands fa-facebook social-media__icon"></i></a>
+                <a class="social-media__link" href="#"><i class="fa-brands fa-instagram social-media__icon"></i></a>
+                <a class="social-media__link" href="#"><i class="fa-brands fa-youtube social-media__icon"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div id="start" class="start">
+                <div class="start__background"></div>
+            </div>
+        </section>
+        <section>
+            <div id="about-me" class="about-me">
+                <div class="about-me__info">
+                    <h2 class="about-me__header">O mnie</h2>
+                    <p class="about-me__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel
+                        ipsum repellendus saepe
+                        facilis officia aut, sunt natus quam quia, fugit accusamus ullam reprehenderit? Fugiat
+                        consectetur voluptate maiores voluptatum numquam?</p>
+                    <p class="about-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet
+                        maxime ipsa voluptas
+                        error perferendis excepturi sapiente distinctio dolores maiores quisquam architecto, fugiat sint
+                        alias ratione? Dignissimos, veritatis! Culpa, assumenda!</p>
+                    <p class="about-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut vero
+                        nemo deserunt fuga rerum
+                        ipsum nihil quae, explicabo, excepturi porro atque temporibus asperiores voluptatem dolor!
+                        Eligendi ullam incidunt id!</p>
+                    <p class="about-me__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse culpa quo
+                        similique quos sit
+                        doloribus eligendi voluptatibus in.</p>
+                </div>
+                <img class="about-me__img" src="./images/mezczyzna-obserwujacy-szczyt-gory-ze-szczytu-o-poranku.jpg"
+                    alt="mezczyzna-obserwujacy-szczyt-gory-ze-szczytu-o-poranku">
+            </div>
+        </section>
+        <section>
+            <div id="galery" class="galery">
+                <h2 class="galery__header">Galeria</h2>
+                <div class="slider">
+                    <div class="slider__box">
+                        <img src="./images/reinhart-julian.jpg" alt="domy-na-plazy-noca" class="slider__img ">
+                        <img src="./images/londyn-wieczorem.jpg" alt="londynski-most-wieczorem" class="slider__img">
+                        <img src="./images/wenecja-rankiem.jpg" alt="wenecja-o-poranku" class="slider__img">
+                        <img src="./images/hintersee-bawaria.jpg" alt="jezioro-bawaria" class="slider__img">
+                    </div>
+                    <button class="slider__btn slider__btn--left"><span class="slider__btn-span">&lt;</span></button>
+                    <button class="slider__btn slider__btn--right"><span class="slider__btn-span">&gt;</span></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="contact" class="contact contact--hide">
+                <form class="contact__form">
+                    <div class="contact__x"><i class="fas fa-times contact__x-text"></i></div>
+                    <label for="name" class="contact__label">Imię<span class="contact__text--red">*</span></label>
+                    <input type="text" id="name" class="contact__input" placeholder="- wpisz -">
+                    <label for="surname" class="contact__label">Nazwisko<span
+                            class="contact__text--red">*</span></label>
+                    <input type="text" id="surname" class="contact__input" placeholder="- wpisz -">
+                    <label for="email" class="contact__label">Adres E-mail<span
+                            class="contact__text--red">*</span></label>
+                    <input type="email" id="email" class="contact__input" placeholder="- wpisz -">
+                    <p class="contact__text"><span class="contact__text--red">*</span> - pola wymagane</p>
+                    <div class="contact-rules">
+                        <input class="contact-rules__agreement" type="checkbox" id="agreement">
+                        <p class="contact-rules__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+                            culpa, cum inventore alias
+                            blanditiis facere, eum porro aperiam quis vero doloremque. Nihil pariatur, officia
+                            consequuntur
+                            obcaecati dicta facilis in quidem?</p>
+                    </div>
+                    <button class="contact__btn-send">Wyślij</button>
+                    <p class="contact__error-text contact__error-text--hide">Proszę wypełnic wymagane pola!</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+    <script src="./js/contact.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
